@@ -136,6 +136,7 @@
       box-shadow: 0 4px 24px hsla(30,14%,40%,.1);
     }
     .hero-badge .meta { font-size: 11px; color: var(--muted); margin-top: 3px; }
+    .hero-img-mobile { display: none; }
     .hero-right {
       flex: 0 0 40%; max-width: 40%;
       display: flex; justify-content: center; align-items: center;
@@ -429,14 +430,10 @@
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
       .hero-inner { flex-direction: column; padding-bottom: 60px; }
-      .hero-right { flex: 1 1 100%; max-width: 100%; }
-      .hero-left { display: contents; }
-      .hero-left .tag { order: 1; }
-      .hero-left .h1 { order: 2; }
-      .hero-left .sub { order: 3; }
-      .hero-right { order: 4; }
-      .hero-actions { order: 5; }
-      .hero-badge { order: 6; }
+      .hero-left, .hero-right { flex: 1 1 100%; max-width: 100%; }
+      .hero-right { display: none; }
+      .hero-img-mobile { display: flex; justify-content: center; margin: 32px 0; }
+      .hero-img-mobile .doctor-card { width: 260px; }
       .doctor-card { width: 260px; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .insta-grid { grid-template-columns: repeat(3, 1fr); }
@@ -516,6 +513,13 @@
       <span class="tag">Implantodontia &amp; Periodontia</span>
       <h1 class="h1">Transforme seu<br>sorriso com<br>precisão e cuidado</h1>
       <p class="sub">Tecnologia de ponta e atendimento humanizado para criar resultados naturais, duradouros e personalizados para você.</p>
+      <div class="hero-img-mobile">
+        <div class="doctor-card">
+          <div class="photo">
+            <img src="brand_assets/patricia-hero.jpg.png" alt="Dra. Patrícia Azevedo" />
+          </div>
+        </div>
+      </div>
       <div class="hero-actions">
         <a href="https://wa.me/5538984041874" target="_blank" class="btn btn-dark">Agendar Avaliação</a>
         <a href="#servicos" class="btn btn-outline">Conheça os Serviços</a>
