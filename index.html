@@ -429,8 +429,14 @@
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
       .hero-inner { flex-direction: column; padding-bottom: 60px; }
-      .hero-left, .hero-right { flex: 1 1 100%; max-width: 100%; }
-      .hero-right { order: -1; }
+      .hero-right { flex: 1 1 100%; max-width: 100%; }
+      .hero-left { display: contents; }
+      .hero-left .tag { order: 1; }
+      .hero-left .h1 { order: 2; }
+      .hero-left .sub { order: 3; }
+      .hero-right { order: 4; }
+      .hero-actions { order: 5; }
+      .hero-badge { order: 6; }
       .doctor-card { width: 260px; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .insta-grid { grid-template-columns: repeat(3, 1fr); }
